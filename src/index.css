@@ -16,61 +16,241 @@ code {
 }
 
 
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Poppins";
+}
+
 nav{
+  background-color: white;
+}
+
+button{
+  background-color: inherit;
+}
+
+
+.logo-div{
+  margin-left: 5rem;
+}
+
+.right-nav{
+  margin-right: 5rem;
+}
+
+.nav-text{
   font-size: 14px;
-  line-height: 23px;
-  background-color: #ffffff;
+  font-weight: 600;
+  color: rgb(8, 31, 137);
+}
+
+.arrow-down-icon{
+  font-size: 10px;
+}
+
+.link{
+  margin-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+
+.home-drop,
+.programmes-drop,
+.admissions-drop,
+.e-portal-drop{
+  display: none;
+  top: 3.4rem;
+  width: 14rem;
+  background-color: rgba(255, 255, 255, 0.89);
+  border-top: 3px solid rgb(0,28,134);
+  transition: all 1s linear;
+}
+
+.link:hover .home-drop,
+.link:hover .programmes-drop,
+.link:hover .admissions-drop,
+.link:hover .e-portal-drop{
+  display: block;
+}
+
+.home-drop button,
+.programmes-drop button,
+.admissions-drop button,
+.e-portal-drop button{
+  width: 80%;
+  transition: all 1s linear;
+  background-color: rgba(255, 255, 255, 0.123);
+
+}
+
+.home-drop button:hover,
+.programmes-drop button:hover,
+.admissions-drop button:hover,
+.e-portal-drop button:hover{
+  background-color: rgb(247, 244, 249);
+}
+
+.d-text{
+  font-size: 14px;
+  line-height: 28px;
+}
+/* -------------------------end of nav-------------------------------------- */
+
+.fix-logo1,
+.fix-logo2,
+.fix-logo3{
+  top: 40vh;
+}
+
+.s{
+  background-color: rgb(26,0,82);
+  width: 5px;
+}
+
+.fix-logo2{
+  top: 46.5vh;
+}
+
+.fix-logo3{
+  top: 53vh;
+}
+
+.fb{
+  width: 3rem;
+  transition: all 0.2s linear;
+  background-color: rgb(58,87,154);
+  padding-bottom: 10px;
+  padding-top: 6px;
+  border-radius: 0 5px 0 0;
+}
+
+.fb-img{
+  width: 0.7rem;
+}
+
+.fb:hover{
+  width: 2rem;
+  margin-left: 0.3rem;
+  background-color: rgba(58, 87, 154, 0.842);
+}
+
+.twitter{
+  width: 3rem;
+  padding: 12px 0;
+  transition: all 0.2s linear;
+  background-color: rgb(0,171,240);
+}
+
+.twitter:hover{
+  margin-left: 0.3rem;
+  width: 2rem;
+  background-color: rgba(0, 172, 240, 0.795);
+}
+
+.twitter-img{
+  width: 1.2rem;
+}
+
+.linkedln{
+  background-color: rgb(18,123,182);
+  width: 3rem;
+  transition: all 0.2s linear;
+  border-radius: 0 0 5px 0;
+}
+
+.linkedln-img{
+  width: 2.4rem;
+}
+
+.linkedln:hover{
+  margin-left: 0.3rem;
+  width: 2rem;
+  background-color: rgba(18, 122, 182, 0.829);
+}
+
+.chat{
+  bottom: 7rem;
+  left: 3rem;
+}
+
+.whatsapp-div{
+  background-color: rgb(45,183,66);
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.whatsapp-img{
+  width: 60%;
+  transition: all 0.3s linear;
+}
+
+.need-help{
+  left: 4rem;
+  top: 0.7rem;
+  width: 10rem;
+  background-color: rgba(245, 247, 249, 1);
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Arial;
+  padding: 8px 0;
+}
+
+
+
+/* ---------------------------section-1------------------------------------ */
+
+.content-1{
+  margin-top: 5.5rem;
+}
+
+.study{
+  margin-left: 3.7rem;
+  padding-left: 6rem;
+  width: 45%;
+}
+
+.study h1{
+  font-size: 72px;
+  line-height: 79.2px;
+  font-weight: 700;
+  color: rgba(26, 0, 82, 1);
+  font-family: "Poppins";
+}
+
+.study p{
+  font-size: 16px;
+  line-height: 28.8px;
+  font-family: "Poppins";
   font-weight: 500;
 }
 
-.nav{
-  margin:0 10%;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
-  line-height: 23px;
-}
-
-.logo{
-  width: 100px;
-  font-size: 14px;
-  padding: 5px;
-}
-
-.links a{
+.a-link{
   text-decoration: none;
-  margin-left: 30px;
-  font-weight: 700;
-  color: #081F89;
-  font-size: 14px;
-  position: relative;
 }
 
-.drop{  
-  display: none;
+.a-link button{
+  background-color: rgb(0,32,138);
+  border-radius: 10px;
+  padding: 12px 32px;
 }
 
-.links a:hover > .drop{
-  display: block;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  /* background-color: #081F89; */
-  border-top: 2px solid #081F89;
-  margin-top: 40px;
-  left: 0;
-  width: 200px;
+.a-link button h6{
+  font-family: "Poppins";
+  color: white;
   font-size: 14px;
-  color: #000000;
+  line-height: 23.8px;
   font-weight: 600;
 }
 
-.links a:hover > .drop a{
-  padding: 20px 0px;
+.arrow-icon{
+  top: 1.35rem;
+  right: 1.4rem;
+  transition: all 2s ease-in-out;
+  display: none;
 }
 
-.links a:hover > .drop a:hover{
-  background-color: RGBA(0, 0, 0, 0.03);
+.a-link button:hover .arrow-icon{
+  right: 1rem;
+  display: block;
 }
